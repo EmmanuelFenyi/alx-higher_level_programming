@@ -50,7 +50,7 @@ $ cat 3-list_tables.sql | mysql -h localhost -u root -p mysql
   `first_table`.
   * Description:
     * `id` = `89`
-    * `name` = `Holberton School`
+    * `name` = `Best School`
 
 * **8. Count 89**
   * [8-count_89.sql](./8-count_89.sql): MySQL script that displays the number records with `id =
@@ -101,6 +101,8 @@ $ cat 3-list_tables.sql | mysql -h localhost -u root -p mysql
 * **17. Go to UTF8**
   * [100-move_to_utf8.sql](./100-move_to_utf8.sql): MySQL script that converts the `hbtn_0c_0`
   database to UTF8.
+
+[This link](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/272/temperatures.sql) was used for the following tasks:
 
 * **18. Temperatures #0**
   * [101-avg_temperatures.sql](./101-avg_temperatures.sql): MySQL script that displays the average
