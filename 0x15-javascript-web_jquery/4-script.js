@@ -1,10 +1,14 @@
-const $ = window.$;
-$('DIV#toggle_header').click(function () {
-  if ($('HEADER').hasClass('red')) {
-    $('HEADER').removeClass('red');
-    $('HEADER').addClass('green');
-  } else {
-    $('HEADER').removeClass('green');
-    $('HEADER').addClass('red');
+const $headerElem = $('header');
+const $divRedHeader = $('DIV#toggle_header');
+
+$divRedHeader.on('click', () => {
+  const currentClass = $headerElem.attr('class');
+
+  if (currentClass === 'green') {
+    $headerElem.toggleClass(`${currentClass} red`);
+  }
+
+  if (currentClass === 'red') {
+    $headerElem.toggleClass(`${currentClass} green`);
   }
 });

@@ -1,7 +1,15 @@
-const $ = window.$;
-$.get('https://swapi.co/api/films/?format=json', function (data, textStatus) {
-  const res = data.results;
-  for (let i = 0; i < res.length; i++) {
-    $('UL#list_movies').append('<li>' + res[i].title + '</li>');
+const moviesUri = 'https://swapi-api.hbtn.io/api/films/?format=json';
+const $movieList = $('ul#list_movies');
+
+$.ajax({
+  url: moviesUri,
+  dataType: 'json'
+}).done((data) => {
+  const movies = data.results;
+
+  for (let i = 0; i < movies.length; ++i) {
+    const movieTitle = movies[i].title;
+    const element = `<li>${movieTitle}`;
+    $movieList.append(element);
   }
 });

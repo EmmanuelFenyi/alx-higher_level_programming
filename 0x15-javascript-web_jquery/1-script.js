@@ -1,2 +1,3 @@
-const $ = window.$;
-$('HEADER').css('color', '#FF0000');
+const $headerElem = $('header');
+
+$headerElem.css('color', '#FF0000');
