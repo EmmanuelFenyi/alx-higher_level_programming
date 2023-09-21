@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const headerElem = document.querySelector('HEADER');
-  headerElem.style.color = '#FF0000';
-});
+window.onload = function () {
+  document.querySelector('HEADER').style.color = '#FF0000';
+};
